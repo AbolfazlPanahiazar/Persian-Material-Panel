@@ -10,6 +10,7 @@ const lightenRate = 7.5;
 const darkenRate = 15;
 
 export default {
+  direction: "rtl",
   palette: {
     primary: {
       main: primary,
@@ -122,10 +123,27 @@ export default {
         borderBottom: "1px solid rgba(224, 224, 224, .5)",
       },
       head: {
+        textAlign: "right",
         fontSize: "0.95rem",
       },
       body: {
+        textAlign: "right",
         fontSize: "0.95rem",
+      },
+    },
+    MuiTypography: {
+      root: {
+        fontFamily: "Shabnam !important",
+      },
+    },
+    MuiListItemText: {
+      root: {
+        textAlign: "right",
+      },
+    },
+    MUIDataTable: {
+      responsiveStacked: {
+        overFlowX: "hidden !important",
       },
     },
   },

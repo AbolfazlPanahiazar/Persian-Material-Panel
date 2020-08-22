@@ -94,7 +94,7 @@ export default makeStyles(theme => ({
     },
   },
   headerMenuButton: {
-    marginLeft: theme.spacing(2),
+    marginRight: theme.spacing(2),
     padding: theme.spacing(0.5),
   },
   headerMenuButtonCollapse: {
