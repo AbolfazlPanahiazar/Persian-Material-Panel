@@ -125,10 +125,12 @@ export default {
       head: {
         textAlign: "right",
         fontSize: "0.95rem",
+        fontFamily: "Shabnam",
       },
       body: {
         textAlign: "right",
         fontSize: "0.95rem",
+        fontFamily: "Shabnam",
       },
     },
     MuiTypography: {
@@ -144,6 +146,9 @@ export default {
     MUIDataTable: {
       responsiveStacked: {
         overFlowX: "hidden !important",
+      },
+      caption: {
+        display: "none",
       },
     },
   },

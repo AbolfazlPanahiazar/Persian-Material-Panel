@@ -10,6 +10,7 @@ import {
   LibraryBooks as LibraryIcon,
   HelpOutline as FAQIcon,
   ArrowBack as ArrowBackIcon,
+  Book as BookIcon,
 } from "@material-ui/icons";
 import { useTheme } from "@material-ui/styles";
 import { withRouter } from "react-router-dom";
@@ -30,6 +31,12 @@ import {
 } from "../../context/LayoutContext";
 
 const structure = [
+  {
+    id: -2,
+    label: "لیست کتاب ها",
+    link: "/app/bookList",
+    icon: <BookIcon />,
+  },
   { id: 0, label: "داشبورد", link: "/app/dashboard", icon: <HomeIcon /> },
   {
     id: 1,
