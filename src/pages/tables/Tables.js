@@ -11,42 +11,40 @@ import Table from "../dashboard/components/Table/Table";
 import mock from "../dashboard/mock";
 
 const datatableData = [
-  ["Joe James", "Example Inc.", "Yonkers", "NY"],
-  ["John Walsh", "Example Inc.", "Hartford", "CT"],
-  ["Bob Herm", "Example Inc.", "Tampa", "FL"],
-  ["James Houston", "Example Inc.", "Dallas", "TX"],
-  ["Prabhakar Linwood", "Example Inc.", "Hartford", "CT"],
-  ["Kaui Ignace", "Example Inc.", "Yonkers", "NY"],
-  ["Esperanza Susanne", "Example Inc.", "Hartford", "CT"],
-  ["Christian Birgitte", "Example Inc.", "Tampa", "FL"],
-  ["Meral Elias", "Example Inc.", "Hartford", "CT"],
-  ["Deep Pau", "Example Inc.", "Yonkers", "NY"],
-  ["Sebastiana Hani", "Example Inc.", "Dallas", "TX"],
-  ["Marciano Oihana", "Example Inc.", "Yonkers", "NY"],
-  ["Brigid Ankur", "Example Inc.", "Dallas", "TX"],
-  ["Anna Siranush", "Example Inc.", "Yonkers", "NY"],
-  ["Avram Sylva", "Example Inc.", "Hartford", "CT"],
-  ["Serafima Babatunde", "Example Inc.", "Tampa", "FL"],
-  ["Gaston Festus", "Example Inc.", "Tampa", "FL"],
+  ["ابوالفضل پناهی آذر", "مهندس کامپیوتر", "۳۳", "تهران"],
+  ["مهدی علوی", "مهندس کامپیوتر", "۲۵", "قم"],
+  ["سارا قاسمی", "مهندس کامپیوتر", "۴۲", "البرز"],
+  ["محمد فرخاری", "مهندس کامپیوتر", "۱۹", "زنجان"],
+  ["علی جعفری", "مهندس کامپیوتر", "۲۵", "قزوین"],
+  ["مهناز محمودی", "طراح", "۳۳", "همدان"],
+  ["حسین امیری", "طراح", "۲۵", "اصفحان"],
+  ["علیرضا عامری", "طراح", "۴۲", "مازندران"],
+  ["ایلیا پناهی", "طراح", "۲۵", "گیلان"],
+  ["اردشیر ازاد", "بازاریاب", "۳۳", "گلستان"],
+  ["امیرمهدی کشن زارع", "بازاریاب", "۱۹", "خراسان رضوی"],
+  ["فرزاد عطایی", "بازاریاب", "۳۳", "سیستان و بلوچستان"],
+  ["علیرضا کاظمی", "بازاریاب", "۱۹", "بوشهر"],
+  ["فاطمه گیلک", "آزاد", "۳۳", "خوزستان"],
+  ["زهرا موحد", "آزاد", "۲۵", "کرمان"],
 ];
 
 export default function Tables() {
   return (
     <>
-      <PageTitle title="Tables" />
+      <PageTitle title="جدول ها" />
       <Grid container spacing={4}>
         <Grid item xs={12}>
           <MUIDataTable
-            title="Employee List"
+            title="جدول MUI"
             data={datatableData}
-            columns={["Name", "Company", "City", "State"]}
+            columns={["نام", "شغل", "سن", "استان"]}
             options={{
               filterType: "checkbox",
             }}
           />
         </Grid>
         <Grid item xs={12}>
-          <Widget title="Material-UI Table" upperTitle noBodyPadding>
+          <Widget title="جدول متریال" upperTitle noBodyPadding>
             <Table data={mock.table} />
           </Widget>
         </Grid>
