@@ -81,70 +81,78 @@ export default function Charts(props) {
 
   return (
     <>
-      <PageTitle title="Charts Page - Data Display" button="Latest Reports" />
+      <PageTitle title="نمودار ها - نمایش دیتا" />
       <Grid container spacing={4}>
         <Grid item xs={12} md={6}>
-          <Widget title="Apex Line Chart" upperTitle noBodyPadding>
-            <ApexLineChart />
+          <Widget title="نمودار خطی" upperTitle noBodyPadding>
+            <div style={{ direction: "ltr" }}>
+              <ApexLineChart />
+            </div>
           </Widget>
         </Grid>
         <Grid item xs={12} md={6}>
-          <Widget title="Apex Heatmap" upperTitle noBodyPadding>
-            <ApexHeatmap />
+          <Widget title="نمودار هیت مپ" upperTitle noBodyPadding>
+            <div style={{ direction: "ltr" }}>
+              <ApexHeatmap />
+            </div>
           </Widget>
         </Grid>
         <Grid item xs={12} md={8}>
-          <Widget title="Simple Line Chart" noBodyPadding upperTitle>
-            <ResponsiveContainer width="100%" height={350}>
-              <LineChart
-                width={500}
-                height={300}
-                data={lineChartData}
-                margin={{
-                  top: 5,
-                  right: 30,
-                  left: 20,
-                  bottom: 5,
-                }}
-              >
-                <CartesianGrid strokeDasharray="3 3" />
-                <XAxis dataKey="name" />
-                <YAxis />
-                <Tooltip />
-                <Legend />
-                <Line
-                  type="monotone"
-                  dataKey="pv"
-                  stroke={theme.palette.primary.main}
-                  activeDot={{ r: 8 }}
-                />
-                <Line
-                  type="monotone"
-                  dataKey="uv"
-                  stroke={theme.palette.secondary.main}
-                />
-              </LineChart>
-            </ResponsiveContainer>
+          <Widget title="نمودار خطی" noBodyPadding upperTitle>
+            <div style={{ direction: "ltr" }}>
+              <ResponsiveContainer width="100%" height={350}>
+                <LineChart
+                  width={500}
+                  height={300}
+                  data={lineChartData}
+                  margin={{
+                    top: 5,
+                    right: 30,
+                    left: 20,
+                    bottom: 5,
+                  }}
+                >
+                  <CartesianGrid strokeDasharray="3 3" />
+                  <XAxis dataKey="name" />
+                  <YAxis />
+                  <Tooltip />
+                  <Legend />
+                  <Line
+                    type="monotone"
+                    dataKey="pv"
+                    stroke={theme.palette.primary.main}
+                    activeDot={{ r: 8 }}
+                  />
+                  <Line
+                    type="monotone"
+                    dataKey="uv"
+                    stroke={theme.palette.secondary.main}
+                  />
+                </LineChart>
+              </ResponsiveContainer>
+            </div>
           </Widget>
         </Grid>
         <Grid item xs={12} md={4}>
-          <Widget title="Pie Chart with Tooltips" noBodyPadding upperTitle>
-            <ResponsiveContainer width="100%" height={300}>
-              <PieChart width={200} height={300}>
-                <Pie
-                  activeIndex={activeIndex}
-                  activeShape={renderActiveShape}
-                  data={pieChartData}
-                  cx={200}
-                  cy={150}
-                  innerRadius={60}
-                  outerRadius={80}
-                  fill={theme.palette.primary.main}
-                  dataKey="value"
-                  onMouseEnter={(e, id) => setActiveIndexId(id)}
-                />
-              </PieChart>
-            </ResponsiveContainer>
+          <Widget title="نمودار دایره ای" noBodyPadding upperTitle>
+            <div style={{ direction: "ltr" }}>
+              <ResponsiveContainer width="100%" height={300}>
+                <PieChart width={200} height={300}>
+                  <Pie
+                    activeIndex={activeIndex}
+                    activeShape={renderActiveShape}
+                    data={pieChartData}
+                    cx={200}
+                    cy={150}
+                    innerRadius={60}
+                    outerRadius={80}
+                    fill={theme.palette.primary.main}
+                    dataKey="value"
+                    onMouseEnter={(e, id) => setActiveIndexId(id)}
+                  />
+                </PieChart>
+              </ResponsiveContainer>
+            </div>
           </Widget>
         </Grid>
       </Grid>

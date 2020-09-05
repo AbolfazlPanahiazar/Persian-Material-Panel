@@ -49,7 +49,7 @@ function themeOptions(theme) {
     },
     tooltip: {
       x: {
-        format: "dd/MM/yy HH:mm",
+        format: "yy/MM/dd HH:mm",
       },
     },
     fill: {
