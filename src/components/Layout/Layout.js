@@ -6,17 +6,17 @@ import classnames from "classnames";
 import useStyles from "./styles";
 
 // components
-import Header from "../Header";
-import Sidebar from "../Sidebar";
+import Header from "../Header/Header";
+import Sidebar from "../Sidebar/Sidebar";
 
 // pages
-import Dashboard from "../../pages/dashboard";
-import Typography from "../../pages/typography";
-import Notifications from "../../pages/notifications";
-import Maps from "../../pages/maps";
-import Tables from "../../pages/tables";
-import Icons from "../../pages/icons";
-import Charts from "../../pages/charts";
+import Dashboard from "../../pages/dashboard/Dashboard";
+import Typography from "../../pages/typography/Typography";
+import Notifications from "../../pages/notifications/Notifications";
+import Maps from "../../pages/maps/Maps";
+import Tables from "../../pages/tables/Tables";
+import Icons from "../../pages/icons/Icons";
+import Charts from "../../pages/notifications/Notifications";
 
 // context
 import { useLayoutState } from "../../context/LayoutContext";
