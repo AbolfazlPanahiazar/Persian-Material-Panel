@@ -17,8 +17,7 @@ const states = {
 };
 
 export default function TableComponent({ data }) {
-  var keys = Object.keys(data[0]).map(i => i.toUpperCase());
-  keys.shift(); // delete "id" key
+  var keys = ["نام", "پست الکترونیک", "محصول", "قیمت", "تاریخ", "شهر", "وضعیت"];
 
   return (
     <Table className="mb-0">
@@ -40,7 +39,18 @@ export default function TableComponent({ data }) {
             <TableCell>{city}</TableCell>
             <TableCell>
               <Button
-                color={states[status.toLowerCase()]}
+                color={
+                  states[
+                    status == "ارسال شده"
+                      ? "sent"
+                      : status == "در حال بررسی"
+                      ? "pending"
+                      : status == "لغو شده"
+                      ? "declined"
+                      : ""
+                  ]
+                }
+                style={{ fontFamily: "Shabnam" }}
                 size="small"
                 className="px-2"
                 variant="contained"

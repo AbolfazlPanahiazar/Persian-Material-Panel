@@ -37,9 +37,9 @@ export default function BigStat(props) {
             }
             className={classes.select}
           >
-            <MenuItem value="daily">Daily</MenuItem>
-            <MenuItem value="weekly">Weekly</MenuItem>
-            <MenuItem value="monthly">Monthly</MenuItem>
+            <MenuItem value="daily">روزانه</MenuItem>
+            <MenuItem value="weekly">هفتگی</MenuItem>
+            <MenuItem value="monthly">ماهانه</MenuItem>
           </Select>
         </div>
       }
@@ -75,7 +75,7 @@ export default function BigStat(props) {
             />
           </Grid>
           <Typography size="sm" color="text" colorBrightness="secondary">
-            Registrations
+            ثبت نام
           </Typography>
         </div>
         <div className={classes.statCell}>
@@ -88,7 +88,7 @@ export default function BigStat(props) {
             />
           </Grid>
           <Typography size="sm" color="text" colorBrightness="secondary">
-            Bounce Rate
+            گراف
           </Typography>
         </div>
         <div className={classnames(classes.statCell, classes.borderRight)}>
@@ -103,7 +103,7 @@ export default function BigStat(props) {
             />
           </Grid>
           <Typography size="sm" color="text" colorBrightness="secondary">
-            Views
+            بازدید
           </Typography>
         </div>
       </div>

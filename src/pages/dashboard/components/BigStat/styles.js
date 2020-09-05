@@ -36,6 +36,7 @@ export default makeStyles(theme => ({
     fill: theme.palette.secondary.main,
   },
   selectInput: {
+    fontFamily: "Shabnam",
     padding: 10,
     paddingRight: 25,
     "&:focus": {

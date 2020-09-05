@@ -28,7 +28,7 @@ export default makeStyles(theme => ({
     flexDirection: "column",
     justifyContent: "center",
     alignItems: "flex-end",
-    marginRight: theme.spacing(1),
+    marginLeft: theme.spacing(2),
   },
   legendItemContainer: {
     display: "flex",
@@ -59,7 +59,7 @@ export default makeStyles(theme => ({
     marginRight: theme.spacing(2),
   },
   legendElementText: {
-    marginLeft: theme.spacing(1),
+    marginRight: theme.spacing(1),
   },
   serverOverviewElement: {
     display: "flex",
@@ -99,14 +99,15 @@ export default makeStyles(theme => ({
   mainChartHeaderLabel: {
     display: "flex",
     alignItems: "center",
-    marginLeft: theme.spacing(3),
+    marginRight: theme.spacing(3),
   },
   mainChartSelectRoot: {
     borderColor: theme.palette.text.hint + "80 !important",
   },
   mainChartSelect: {
     padding: 10,
-    paddingRight: 25,
+    paddingLeft: 25,
+    fontFamily: "Shabnam",
   },
   mainChartLegentElement: {
     fontSize: "18px !important",
