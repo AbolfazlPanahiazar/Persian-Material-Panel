@@ -38,7 +38,7 @@ const structure = [
     link: "/app/typography",
     icon: <TypographyIcon />,
   },
-  { id: 2, label: "Tables", link: "/app/tables", icon: <TableIcon /> },
+  { id: 2, label: "جدول ها", link: "/app/tables", icon: <TableIcon /> },
   {
     id: 3,
     label: "اعلان ها",
@@ -62,7 +62,7 @@ const structure = [
   { id: 8, label: "حمایت", link: "", icon: <SupportIcon /> },
   { id: 9, label: "پرسش و پاسخ", link: "", icon: <FAQIcon /> },
   { id: 10, type: "divider" },
-  { id: 11, type: "title", label: "پرژه ها" },
+  { id: 11, type: "title", label: "پروژه ها" },
   {
     id: 12,
     label: "اخیر",
