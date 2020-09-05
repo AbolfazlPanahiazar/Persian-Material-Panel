@@ -345,7 +345,7 @@ export default function NotificationsPage(props) {
       case "info":
         componentProps = {
           type: "feedback",
-          message: "New user feedback received",
+          message: "یک بازخورد جدید ثبت شد",
           variant: "contained",
           color: "primary",
         };
@@ -353,7 +353,7 @@ export default function NotificationsPage(props) {
       case "error":
         componentProps = {
           type: "message",
-          message: "Message was not sent!",
+          message: "پیام ارسال نشد",
           variant: "contained",
           color: "secondary",
           extraButton: "Resend",
@@ -363,7 +363,7 @@ export default function NotificationsPage(props) {
       default:
         componentProps = {
           type: "shipped",
-          message: "The item was shipped",
+          message: "انجام شد",
           variant: "contained",
           color: "success",
         };
