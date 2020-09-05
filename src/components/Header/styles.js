@@ -34,6 +34,7 @@ export default makeStyles(theme => ({
   search: {
     position: "relative",
     borderRadius: 25,
+    marginLeft: theme.spacing(2),
     paddingLeft: theme.spacing(2.5),
     width: 36,
     backgroundColor: fade(theme.palette.common.black, 0),
@@ -69,6 +70,7 @@ export default makeStyles(theme => ({
   inputRoot: {
     color: "inherit",
     width: "100%",
+    fontFamily: "Shabnam",
   },
   inputInput: {
     height: 36,
@@ -94,11 +96,11 @@ export default makeStyles(theme => ({
     },
   },
   headerMenuButton: {
-    marginRight: theme.spacing(2),
+    marginLeft: theme.spacing(2),
     padding: theme.spacing(0.5),
   },
   headerMenuButtonCollapse: {
-    marginRight: theme.spacing(2),
+    marginLeft: theme.spacing(2),
   },
   headerIcon: {
     fontSize: 28,
@@ -117,9 +119,10 @@ export default makeStyles(theme => ({
   },
   profileMenuItem: {
     color: theme.palette.text.hint,
+    fontFamily: "Shabnam",
   },
   profileMenuIcon: {
-    marginRight: theme.spacing(2),
+    marginLeft: theme.spacing(2),
     color: theme.palette.text.hint,
   },
   profileMenuLink: {
@@ -141,7 +144,7 @@ export default makeStyles(theme => ({
     display: "flex",
     flexDirection: "column",
     alignItems: "center",
-    marginRight: theme.spacing(2),
+    marginLeft: theme.spacing(2),
   },
   messageNotificationBodySide: {
     alignItems: "flex-start",
@@ -152,8 +155,9 @@ export default makeStyles(theme => ({
     marginTop: theme.spacing(2),
     marginBottom: theme.spacing(2),
     textTransform: "none",
+    fontFamily: "Shabnam",
   },
   sendButtonIcon: {
-    marginLeft: theme.spacing(2),
+    marginLeft: theme.spacing(1),
   },
 }));

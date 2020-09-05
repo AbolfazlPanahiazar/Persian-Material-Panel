@@ -42,52 +42,52 @@ const messages = [
   {
     id: 0,
     variant: "warning",
-    name: "محمد محمدی",
+    name: "ابوالفضل پناهی آذر",
     message: "سلام، چخبر؟",
     time: "۹:۳۲",
   },
   {
     id: 1,
     variant: "success",
-    name: "Lloyd Brown",
-    message: "Check out my new Dashboard",
-    time: "9:18",
+    name: "علی علوی",
+    message: "به پنل یه نگاه بنداز",
+    time: "۹:۱۸",
   },
   {
     id: 2,
     variant: "primary",
-    name: "Mark Winstein",
-    message: "I want rearrange the appointment",
-    time: "9:15",
+    name: "محمد جفعری",
+    message: "میخوام جلسه ای داشته باشیم",
+    time: "۹:۱۵",
   },
   {
     id: 3,
     variant: "secondary",
-    name: "Liana Dutti",
-    message: "Good news from sale department",
-    time: "9:09",
+    name: "ساناز موسوی",
+    message: "اخبار جدیدی از آمار فروش دارم",
+    time: "۱۰:۱۱",
   },
 ];
 
 const notifications = [
-  { id: 0, color: "warning", message: "Check out this awesome ticket" },
+  { id: 0, color: "warning", message: "این ویژگی جدید رو چک کن" },
   {
     id: 1,
     color: "success",
     type: "info",
-    message: "What is the best way to get ...",
+    message: "بهترین راه براس ایجاد اطلاعات",
   },
   {
     id: 2,
     color: "secondary",
     type: "notification",
-    message: "This is just a simple notification",
+    message: "متن آزمایشی برای پنل مدیریت",
   },
   {
     id: 3,
     color: "primary",
     type: "e-commerce",
-    message: "12 new orders has arrived today",
+    message: "۱۲ سفارش جدید ایجاد شده است",
   },
 ];
 
@@ -100,12 +100,12 @@ export default function Header(props) {
   var userDispatch = useUserDispatch();
 
   // local
-  var [mailMenu, setMailMenu] = useState(null);
-  var [isMailsUnread, setIsMailsUnread] = useState(true);
-  var [notificationsMenu, setNotificationsMenu] = useState(null);
-  var [isNotificationsUnread, setIsNotificationsUnread] = useState(true);
-  var [profileMenu, setProfileMenu] = useState(null);
-  var [isSearchOpen, setSearchOpen] = useState(false);
+  const [mailMenu, setMailMenu] = useState(null);
+  const [isMailsUnread, setIsMailsUnread] = useState(true);
+  const [notificationsMenu, setNotificationsMenu] = useState(null);
+  const [isNotificationsUnread, setIsNotificationsUnread] = useState(true);
+  const [profileMenu, setProfileMenu] = useState(null);
+  const [isSearchOpen, setSearchOpen] = useState(true);
 
   return (
     <AppBar position="fixed" className={classes.appBar}>
@@ -156,7 +156,7 @@ export default function Header(props) {
             <SearchIcon classes={{ root: classes.headerIcon }} />
           </div>
           <InputBase
-            placeholder="Search…"
+            placeholder="جستجو..."
             classes={{
               root: classes.inputRoot,
               input: classes.inputInput,
@@ -218,14 +218,14 @@ export default function Header(props) {
         >
           <div className={classes.profileMenuUser}>
             <Typography variant="h4" weight="medium">
-              New Messages
+              پیام های جدید
             </Typography>
             <Typography
               className={classes.profileMenuLink}
               component="a"
               color="secondary"
             >
-              {messages.length} New Messages
+              {messages.length} پیام جدید
             </Typography>
           </div>
           {messages.map(message => (
@@ -257,8 +257,8 @@ export default function Header(props) {
             aria-label="Add"
             className={classes.sendMessageButton}
           >
-            Send New Message
             <SendIcon className={classes.sendButtonIcon} />
+            ارسال پیام
           </Fab>
         </Menu>
         <Menu
@@ -290,15 +290,15 @@ export default function Header(props) {
         >
           <div className={classes.profileMenuUser}>
             <Typography variant="h4" weight="medium">
-              John Smith
+              ابوالفضل پناهی آذر
             </Typography>
             <Typography
               className={classes.profileMenuLink}
               component="a"
               color="primary"
-              href="https://flatlogic.com"
+              href="http://panahiazar.com"
             >
-              Flalogic.com
+              panahiazar.ir
             </Typography>
           </div>
           <MenuItem
@@ -307,7 +307,7 @@ export default function Header(props) {
               classes.headerMenuItem,
             )}
           >
-            <AccountIcon className={classes.profileMenuIcon} /> Profile
+            <AccountIcon className={classes.profileMenuIcon} /> پروفایل
           </MenuItem>
           <MenuItem
             className={classNames(
@@ -315,7 +315,7 @@ export default function Header(props) {
               classes.headerMenuItem,
             )}
           >
-            <AccountIcon className={classes.profileMenuIcon} /> Tasks
+            <NotificationsIcon className={classes.profileMenuIcon} /> وظیفه ها
           </MenuItem>
           <MenuItem
             className={classNames(
@@ -323,7 +323,7 @@ export default function Header(props) {
               classes.headerMenuItem,
             )}
           >
-            <AccountIcon className={classes.profileMenuIcon} /> Messages
+            <MailIcon className={classes.profileMenuIcon} /> پیام ها
           </MenuItem>
           <div className={classes.profileMenuUser}>
             <Typography
@@ -331,7 +331,7 @@ export default function Header(props) {
               color="primary"
               onClick={() => signOut(userDispatch, props.history)}
             >
-              Sign Out
+              خروج
             </Typography>
           </div>
         </Menu>
