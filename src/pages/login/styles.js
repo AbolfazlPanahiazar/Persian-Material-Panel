@@ -5,6 +5,7 @@ export default makeStyles(theme => ({
     height: "100vh",
     width: "100vw",
     display: "flex",
+    flexDirection: "row-reverse",
     justifyContent: "center",
     alignItems: "center",
     position: "absolute",
@@ -55,6 +56,7 @@ export default makeStyles(theme => ({
   tab: {
     fontWeight: 400,
     fontSize: 18,
+    fontFamily: "Shabnam",
   },
   greeting: {
     fontWeight: 500,
@@ -69,6 +71,7 @@ export default makeStyles(theme => ({
   googleButton: {
     marginTop: theme.spacing(6),
     boxShadow: theme.customShadows.widget,
+    fontFamily: "Shabnam",
     backgroundColor: "white",
     width: "100%",
     textTransform: "none",
@@ -90,6 +93,10 @@ export default makeStyles(theme => ({
   createAccountButton: {
     height: 46,
     textTransform: "none",
+    fontFamily: "Shabnam",
+  },
+  loginButton: {
+    fontFamily: "Shabnam",
   },
   formDividerContainer: {
     marginTop: theme.spacing(4),
@@ -108,6 +115,7 @@ export default makeStyles(theme => ({
   },
   errorMessage: {
     textAlign: "center",
+    fontFamily: "Shabnam",
   },
   textFieldUnderline: {
     "&:before": {
@@ -122,6 +130,7 @@ export default makeStyles(theme => ({
   },
   textField: {
     borderBottomColor: theme.palette.background.light,
+    fontFamily: "Shabnam",
   },
   formButtons: {
     width: "100%",
@@ -129,9 +138,11 @@ export default makeStyles(theme => ({
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",
+    fontFamily: "Shabnam",
   },
   forgetButton: {
     textTransform: "none",
+    fontFamily: "Shabnam",
     fontWeight: 400,
   },
   loginLoader: {

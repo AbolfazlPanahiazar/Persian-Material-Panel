@@ -16,7 +16,7 @@ import classnames from "classnames";
 import useStyles from "./styles";
 
 // logo
-import logo from "./logo.svg";
+import logo from "./logo.png";
 import google from "../../images/google.svg";
 
 // context
@@ -40,7 +40,7 @@ function Login(props) {
     <Grid container className={classes.container}>
       <div className={classes.logotypeContainer}>
         <img src={logo} alt="logo" className={classes.logotypeImage} />
-        <Typography className={classes.logotypeText}>Material Admin</Typography>
+        <Typography className={classes.logotypeText}>پنل مدیریت</Typography>
       </div>
       <div className={classes.formContainer}>
         <div className={classes.form}>
@@ -51,26 +51,26 @@ function Login(props) {
             textColor="primary"
             centered
           >
-            <Tab label="Login" classes={{ root: classes.tab }} />
-            <Tab label="New User" classes={{ root: classes.tab }} />
+            <Tab label="ورود" classes={{ root: classes.tab }} />
+            <Tab label="ثبت نام" classes={{ root: classes.tab }} />
           </Tabs>
           {activeTabId === 0 && (
             <React.Fragment>
               <Typography variant="h1" className={classes.greeting}>
-                Good Morning, User
+                وقت بخیر
               </Typography>
               <Button size="large" className={classes.googleButton}>
                 <img src={google} alt="google" className={classes.googleIcon} />
-                &nbsp;Sign in with Google
+                &nbsp;با گوگل وارد شوید
               </Button>
               <div className={classes.formDividerContainer}>
                 <div className={classes.formDivider} />
-                <Typography className={classes.formDividerWord}>or</Typography>
+                <Typography className={classes.formDividerWord}>یا</Typography>
                 <div className={classes.formDivider} />
               </div>
               <Fade in={error}>
                 <Typography color="secondary" className={classes.errorMessage}>
-                  Something is wrong with your login or password :(
+                  پست الکترونیکی یا رمزعبور شما صحیح نمی باشد
                 </Typography>
               </Fade>
               <TextField
@@ -84,7 +84,7 @@ function Login(props) {
                 value={loginValue}
                 onChange={e => setLoginValue(e.target.value)}
                 margin="normal"
-                placeholder="Email Adress"
+                placeholder="پست الکترونیکی"
                 type="email"
                 fullWidth
               />
@@ -99,7 +99,7 @@ function Login(props) {
                 value={passwordValue}
                 onChange={e => setPasswordValue(e.target.value)}
                 margin="normal"
-                placeholder="Password"
+                placeholder="رمز عبور"
                 type="password"
                 fullWidth
               />
@@ -111,6 +111,7 @@ function Login(props) {
                     disabled={
                       loginValue.length === 0 || passwordValue.length === 0
                     }
+                    className={classes.loginButton}
                     onClick={() =>
                       loginUser(
                         userDispatch,
@@ -125,7 +126,7 @@ function Login(props) {
                     color="primary"
                     size="large"
                   >
-                    Login
+                    ورود
                   </Button>
                 )}
                 <Button
@@ -133,7 +134,7 @@ function Login(props) {
                   size="large"
                   className={classes.forgetButton}
                 >
-                  Forget Password
+                  رمز عبور خود را فراموش کرده ام
                 </Button>
               </div>
             </React.Fragment>
@@ -141,14 +142,14 @@ function Login(props) {
           {activeTabId === 1 && (
             <React.Fragment>
               <Typography variant="h1" className={classes.greeting}>
-                Welcome!
+                خوش آمدید
               </Typography>
               <Typography variant="h2" className={classes.subGreeting}>
-                Create your account
+                حساب کاربری خود را بسازید
               </Typography>
               <Fade in={error}>
                 <Typography color="secondary" className={classes.errorMessage}>
-                  Something is wrong with your login or password :(
+                  پست الکترونیکی یا رمزعبور شما صحیح نمی باشد
                 </Typography>
               </Fade>
               <TextField
@@ -162,7 +163,7 @@ function Login(props) {
                 value={nameValue}
                 onChange={e => setNameValue(e.target.value)}
                 margin="normal"
-                placeholder="Full Name"
+                placeholder="نام و نام خانوادگی"
                 type="text"
                 fullWidth
               />
@@ -177,7 +178,7 @@ function Login(props) {
                 value={loginValue}
                 onChange={e => setLoginValue(e.target.value)}
                 margin="normal"
-                placeholder="Email Adress"
+                placeholder="پست الکترونیکی"
                 type="email"
                 fullWidth
               />
@@ -192,7 +193,7 @@ function Login(props) {
                 value={passwordValue}
                 onChange={e => setPasswordValue(e.target.value)}
                 margin="normal"
-                placeholder="Password"
+                placeholder="رمز عبور"
                 type="password"
                 fullWidth
               />
@@ -222,7 +223,7 @@ function Login(props) {
                     fullWidth
                     className={classes.createAccountButton}
                   >
-                    Create your account
+                    ثبت نام
                   </Button>
                 )}
               </div>
@@ -239,14 +240,11 @@ function Login(props) {
                 )}
               >
                 <img src={google} alt="google" className={classes.googleIcon} />
-                &nbsp;Sign in with Google
+                &nbsp;با گول ثبت نام کنید
               </Button>
             </React.Fragment>
           )}
         </div>
-        <Typography color="primary" className={classes.copyright}>
-          © 2014-2019 Flatlogic, LLC. All rights reserved.
-        </Typography>
       </div>
     </Grid>
   );

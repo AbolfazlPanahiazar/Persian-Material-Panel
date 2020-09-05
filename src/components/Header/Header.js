@@ -9,6 +9,8 @@ import {
   Fab,
   Link,
 } from "@material-ui/core";
+
+//icons
 import {
   Menu as MenuIcon,
   MailOutline as MailIcon,
@@ -16,7 +18,7 @@ import {
   Person as AccountIcon,
   Search as SearchIcon,
   Send as SendIcon,
-  ArrowBack as ArrowBackIcon,
+  ArrowForward as ArrowForwardIcon,
 } from "@material-ui/icons";
 import classNames from "classnames";
 
@@ -40,9 +42,9 @@ const messages = [
   {
     id: 0,
     variant: "warning",
-    name: "Jane Hew",
-    message: "Hey! How is it going?",
-    time: "9:32",
+    name: "محمد محمدی",
+    message: "سلام، چخبر؟",
+    time: "۹:۳۲",
   },
   {
     id: 1,
@@ -117,7 +119,7 @@ export default function Header(props) {
           )}
         >
           {layoutState.isSidebarOpened ? (
-            <ArrowBackIcon
+            <ArrowForwardIcon
               classes={{
                 root: classNames(
                   classes.headerIcon,
@@ -140,15 +142,6 @@ export default function Header(props) {
           پروژه مدیریت کتابخانه
         </Typography>
         <div className={classes.grow} />
-        <Button
-          component={Link}
-          href="https://flatlogic.com/templates/react-material-admin-full"
-          variant={"outlined"}
-          color={"secondary"}
-          style={{ marginRight: 24 }}
-        >
-          Unlock full version
-        </Button>
         <div
           className={classNames(classes.search, {
             [classes.searchFocused]: isSearchOpen,

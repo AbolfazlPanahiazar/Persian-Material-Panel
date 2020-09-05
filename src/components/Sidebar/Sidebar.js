@@ -9,7 +9,7 @@ import {
   QuestionAnswer as SupportIcon,
   LibraryBooks as LibraryIcon,
   HelpOutline as FAQIcon,
-  ArrowBack as ArrowBackIcon,
+  ArrowForward as ArrowForwardIcon,
   Book as BookIcon,
 } from "@material-ui/icons";
 import { useTheme } from "@material-ui/styles";
@@ -31,12 +31,6 @@ import {
 } from "../../context/LayoutContext";
 
 const structure = [
-  {
-    id: -2,
-    label: "لیست کتاب ها",
-    link: "/app/bookList",
-    icon: <BookIcon />,
-  },
   { id: 0, label: "داشبورد", link: "/app/dashboard", icon: <HomeIcon /> },
   {
     id: 1,
@@ -126,7 +120,7 @@ function Sidebar({ location }) {
       <div className={classes.toolbar} />
       <div className={classes.mobileBackButton}>
         <IconButton onClick={() => toggleSidebar(layoutDispatch)}>
-          <ArrowBackIcon
+          <ArrowForwardIcon
             classes={{
               root: classNames(classes.headerIcon, classes.headerIconCollapse),
             }}
