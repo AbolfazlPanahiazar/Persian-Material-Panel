@@ -5,7 +5,7 @@ Built with [React](https://facebook.github.io/react/), [Material-UI](https://mat
 
 **This version uses React 16.8.6, React Router v5, MaterialUI v4, built with React Hooks and React Context (No Redux)**
 
-[Demo](https://flatlogic.com/admin-dashboards/react-material-admin/demo). Use any credentials to log in.
+[پیش نمایش](https://persian-material-panel-bcj2mofko.vercel.app/). از هر عباراتی برای ورود میتوانید استفاده کنید
 
 ## Features
 
@@ -22,20 +22,6 @@ Built with [React](https://facebook.github.io/react/), [Material-UI](https://mat
 - Webpack build
 - Stylish, clean, responsive layout
 - Authentication
-
-## Pages
-
-We have implemented some basic pages, so you can see our template in action.
-
-- Dashboard
-- Typography
-- Tables
-- Notifications
-- Charts
-- Icons
-- Maps
-- Login
-- Error
 
 ## Quick Start
 
@@ -57,30 +43,23 @@ in [package.json](package.json) file.
 #### 3. Run `yarn start`
 
 Runs the app in the development mode.
-
 Open http://localhost:3000 to view it in the browser. Whenever you modify any of the source files inside the `/src` folder,
-the module bundler ([Webpack](http://webpack.github.io/)) will recompile the
-app on the fly and refresh all the connected browsers.
 
 #### 4. Run `yarn build`
 
 Builds the app for production to the build folder.
 It correctly bundles React in production mode and optimizes the build for the best performance.
-
 The build is minified and the filenames include the hashes.
 Your app is ready to be deployed!
 
-## Premium themes
-
-Looking for premium themes and templates? Check out more [admin dashboard templates at flatlogic.com](https://flatlogic.com/admin-dashboards).
-
 ## License
 
-[MIT](https://github.com/flatlogic/react-material-dashboard/blob/master/LICENSE.txt).
+[MIT](https://github.com/AbolfazlPanahiazar/Persian-Material-Panel/blob/master/LICENSE.txt).
 
 ## ترجمه شده
 
 ابوالفضل پناهی آذر
 
-[Enjoy:](https://github.com/flatlogic/react-material-dashboard/blob/master/LICENSE.txt).
+[Enjoy:](https://github.com/AbolfazlPanahiazar/Persian-Material-Panel).
+[Demo](https://persian-material-panel-bcj2mofko.vercel.app/)
 [Panahiazar.ir](http://panahiazar.ir)
