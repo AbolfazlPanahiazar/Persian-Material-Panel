@@ -14,48 +14,48 @@ export default function TypographyPage() {
 
   return (
     <>
-      <PageTitle title="Typography" />
+      <PageTitle title="تایپوگرافی" />
       <Grid container spacing={4}>
         <Grid item xs={12} md={6}>
-          <Widget title="Headings" disableWidgetMenu>
+          <Widget title="عنوان ها" disableWidgetMenu>
             <div className={classes.dashedBorder}>
               <Typography variant="h1" className={classes.text}>
-                h1. Heading
+                h1. متن آزمایشی
               </Typography>
               <Typography variant="h2" className={classes.text}>
-                h2. Heading
+                h2. متن آزمایشی
               </Typography>
               <Typography variant="h3" className={classes.text}>
-                h3. Heading
+                h3. متن آزمایشی
               </Typography>
               <Typography variant="h4" className={classes.text}>
-                h4. Heading
+                h4. متن آزمایشی
               </Typography>
               <Typography variant="h5" className={classes.text}>
-                h5. Heading
+                h5. متن آزمایشی
               </Typography>
-              <Typography variant="h6">h6. Heading</Typography>
+              <Typography variant="h6">h6. متن آزمایشی</Typography>
             </div>
           </Widget>
         </Grid>
         <Grid item xs={12} md={6}>
-          <Widget title="Typography Colors" disableWidgetMenu>
+          <Widget title="رنگ ها" disableWidgetMenu>
             <div className={classes.dashedBorder}>
               <Typography variant="h1" color="primary" className={classes.text}>
-                h1. Heading
+                primary متن آزمایشی
               </Typography>
               <Typography variant="h2" color="success" className={classes.text}>
-                h2. Heading
+                success متن آزمایشی
               </Typography>
               <Typography
                 variant="h3"
                 color="secondary"
                 className={classes.text}
               >
-                h3. Heading
+                secondary متن آزمایشی
               </Typography>
               <Typography variant="h4" color="warning" className={classes.text}>
-                h4. Heading
+                warning متن آزمایشی
               </Typography>
               <Typography
                 variant="h5"
@@ -63,26 +63,26 @@ export default function TypographyPage() {
                 colorBrightness="light"
                 className={classes.text}
               >
-                h5. Heading
+                primary light متن آزمایشی
               </Typography>
               <Typography variant="h6" color="info">
-                h6. Heading
+                info متن آزمایشی
               </Typography>
             </div>
           </Widget>
         </Grid>
         <Grid item xs={12} md={6}>
-          <Widget title="Basic Text Settings" disableWidgetMenu>
+          <Widget title="تنظیمات پایه ای" disableWidgetMenu>
             <div className={classes.dashedBorder}>
-              <Typography className={classes.text}>Basic text</Typography>
+              <Typography className={classes.text}> متن آزمایشی</Typography>
               <Typography className={classes.text} weight="light">
-                Basic light text
+                weight light متن آزمایشی
               </Typography>
               <Typography className={classes.text} weight="medium">
-                Basic medium text
+                weight medium متن آزمایشی
               </Typography>
               <Typography className={classes.text} weight="bold">
-                Basic bold text
+                weight bold متن آزمایشی
               </Typography>
               <Typography className={classes.text}>
                 BASIC UPPERCASE TEXT
@@ -100,22 +100,22 @@ export default function TypographyPage() {
           </Widget>
         </Grid>
         <Grid item xs={12} md={6}>
-          <Widget title="Text Size" disableWidgetMenu>
+          <Widget title="اندازه متن" disableWidgetMenu>
             <div className={classes.dashedBorder}>
               <Typography className={classes.text} size="sm">
-                Heading Typography SM Font Size
+                متن آزمایشی Typography SM
               </Typography>
               <Typography className={classes.text}>
-                Heading Typography Regular Font Size
+                متن آزمایشی Typography Regular
               </Typography>
               <Typography className={classes.text} size="md">
-                Heading Typography MD Font Size
+                متن آزمایشی Typography MD
               </Typography>
               <Typography className={classes.text} size="xl">
-                Heading Typography XL Font Size
+                متن آزمایشی Typography XL
               </Typography>
               <Typography className={classes.text} size="xxl">
-                Heading Typography XXL Font Size
+                متن آزمایشی Typography XXL
               </Typography>
             </div>
           </Widget>
