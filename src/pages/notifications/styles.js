@@ -48,6 +48,7 @@ export default makeStyles(theme => ({
   },
   codeContainer: {
     display: "flex",
+    direction: "ltr",
     flexDirection: "column",
     marginTop: theme.spacing(2),
   },

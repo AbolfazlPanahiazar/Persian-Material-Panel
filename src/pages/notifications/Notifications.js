@@ -34,7 +34,7 @@ export default function NotificationsPage(props) {
 
   return (
     <>
-      <PageTitle title="Notifications" />
+      <PageTitle title="اعلان ها" />
       <Grid container spacing={8}>
         <ToastContainer
           className={classes.toastsContainer}
@@ -45,10 +45,10 @@ export default function NotificationsPage(props) {
           progressClassName={classes.notificationProgress}
         />
         <Grid item xs={12} md={6} lg={4}>
-          <Widget title="Layout Options" disableWidgetMenu>
+          <Widget title="تنظیمات ساختار" disableWidgetMenu>
             <Typography>
-              There are few position options available for notifications. You
-              can click any of them to change notifications position:
+              چند ساختار و پوزیشن متفاوت برای اعلان ها موجود است. شما میتوانید
+              با کلیک روی هر بخش آن را انتخاب کنید
             </Typography>
             <div className={classes.layoutContainer}>
               <div className={classes.layoutButtonsRow}>
@@ -72,7 +72,7 @@ export default function NotificationsPage(props) {
                 />
               </div>
               <Typography className={classes.layoutText} size="md">
-                Click any position
+                محل ورود را انتخاب کنید
               </Typography>
               <div className={classes.layoutButtonsRow}>
                 <button
@@ -98,46 +98,50 @@ export default function NotificationsPage(props) {
           </Widget>
         </Grid>
         <Grid item xs={12} md={6} lg={4}>
-          <Widget title="Notifications Types" disableWidgetMenu>
+          <Widget title="انواع اعلان" disableWidgetMenu>
             <Typography>
-              Different types of notifications for lost of use cases. Custom
-              classes are also supported.
+              انواع اعلان مختلفی برای کاربرد های مختلفی موجود است. کلاس های
+              اختصاصی هم قابل استفاده هستند
             </Typography>
             <div className={classes.buttonsContainer}>
               <Button
                 variant="contained"
                 color="primary"
+                style={{ fontFamily: "Shabnam" }}
                 onClick={() => handleNotificationCall("info")}
                 className={classnames(classes.notificationCallButton)}
               >
-                Info Message
+                پیام اطلاع رسانی Info
               </Button>
               <Button
                 variant="contained"
                 color="secondary"
+                style={{ fontFamily: "Shabnam" }}
                 onClick={() => handleNotificationCall("error")}
                 className={classnames(classes.notificationCallButton)}
               >
-                Error + Retry Message
+                خطا ها و تلاش مجدد Error
               </Button>
               <Button
                 variant="contained"
                 color="success"
+                style={{ fontFamily: "Shabnam" }}
                 onClick={() => handleNotificationCall("success")}
                 className={classnames(classes.notificationCallButton)}
               >
-                Success Message
+                اعلان موفقیت Success
               </Button>
             </div>
           </Widget>
         </Grid>
         <Grid item xs={12} md={6} lg={4}>
-          <Widget title="Usage" disableWidgetMenu>
+          <Widget title="استفاده" disableWidgetMenu>
             <Typography>
-              Notifications are created with the help of{" "}
+              اعلان ها به کمک{" "}
               <a href="https://github.com/fkhadra/react-toastify">
                 react-toastify
-              </a>
+              </a>{" "}
+              ساخته شده اند
             </Typography>
             <div className={classes.codeContainer}>
               <SyntaxHighlighter
@@ -158,19 +162,19 @@ export default function NotificationsPage(props) {
     </div>
   };
             `}</SyntaxHighlighter>
-              <Typography variant="caption">
-                For more API information refer to the library documentation
+              <Typography variant="caption" style={{ direction: "rtl" }}>
+                برای اطلاعات بیشتر به documentation مراجعه کنید
               </Typography>
             </div>
           </Widget>
         </Grid>
         <Grid item xs={12} md={6} lg={4}>
-          <Widget title="Notification Types Examples" disableWidgetMenu>
+          <Widget title="مثال انواع اعلان ها" disableWidgetMenu>
             <Notification
               className={classes.notificationItem}
               shadowless
               type="message"
-              message="Thanks for Checking out Messenger"
+              message="ممنون بابت چک کردن پیام های ما - message"
               variant="contained"
               color="secondary"
             />
@@ -178,7 +182,7 @@ export default function NotificationsPage(props) {
               className={classes.notificationItem}
               shadowless
               type="feedback"
-              message="New user feedback received"
+              message="یه بازخورد جدید ثبت شد - feedback"
               variant="contained"
               color="primary"
             />
@@ -186,7 +190,7 @@ export default function NotificationsPage(props) {
               className={classes.notificationItem}
               shadowless
               type="customer"
-              message="New customer is registered"
+              message="ثبت نام جدید - customer"
               variant="contained"
               color="success"
             />
@@ -194,7 +198,7 @@ export default function NotificationsPage(props) {
               className={classes.notificationItem}
               shadowless
               type="shipped"
-              message="The order was shipped"
+              message="سفارش فرستاده شد - shipped"
               variant="contained"
               color="warning"
             />
@@ -202,7 +206,7 @@ export default function NotificationsPage(props) {
               className={classes.notificationItem}
               shadowless
               type="delivered"
-              message="The order was delivered"
+              message="سفارش تحویل داده شد - delivered"
               variant="contained"
               color="primary"
             />
@@ -210,48 +214,49 @@ export default function NotificationsPage(props) {
               className={classes.notificationItem}
               shadowless
               type="defence"
-              message="5 Defence alerts"
+              message="اعلان پیشگیری - defence"
               variant="contained"
               color="info"
             />
           </Widget>
         </Grid>
         <Grid item xs={12} md={6} lg={4}>
-          <Widget title="Notification Types Examples" disableWidgetMenu>
+          <Widget title="مثال انواع اعلان ها" disableWidgetMenu>
             <Notification
               className={classes.notificationItem}
-              type="report"
-              message="New report has been received"
+              type="message"
+              message="ممنون بابت چک کردن پیام های ما - message"
               color="secondary"
             />
             <Notification
               className={classes.notificationItem}
               type="feedback"
-              message="New user feedback received"
+              message="یه بازخورد جدید ثبت شد - feedback"
               color="primary"
             />
             <Notification
               className={classes.notificationItem}
-              type="shipped"
-              message="The item was shipped"
+              type="customer"
+              message="ثبت نام جدید - customer"
               color="success"
             />
             <Notification
               className={classes.notificationItem}
-              type="message"
-              message="The new message from user @nahawaii"
+              type="shipped"
+              message="سفارش فرستاده شد - shipped"
               color="warning"
             />
             <Notification
               className={classes.notificationItem}
-              type="upload"
-              message="Your file is ready to upload"
+              type="delivered"
+              message="سفارش تحویل داده شد - delivered"
               color="primary"
             />
             <Notification
               className={classes.notificationItem}
-              type="disc"
-              message="The disc is full"
+              shadowless
+              type="defence"
+              message="اعلان پیشگیری - defence"
               color="info"
             />
           </Widget>
@@ -260,43 +265,43 @@ export default function NotificationsPage(props) {
           <Widget title="Notification Types Examples" disableWidgetMenu>
             <Notification
               className={classes.notificationItem}
-              type="report"
-              message="New report has been received"
+              type="message"
+              message="ممنون بابت چک کردن پیام های ما - message"
               variant="rounded"
               color="secondary"
             />
             <Notification
               className={classes.notificationItem}
               type="feedback"
-              message="New user feedback received"
+              message="یه بازخورد جدید ثبت شد - feedback"
               variant="rounded"
               color="primary"
             />
             <Notification
               className={classes.notificationItem}
-              type="shipped"
-              message="The item was shipped"
+              type="customer"
+              message="ثبت نام جدید - customer"
               variant="rounded"
               color="success"
             />
             <Notification
               className={classes.notificationItem}
-              type="message"
-              message="The new message from user @nahawaii"
+              type="shipped"
+              message="سفارش فرستاده شد - shipped"
               variant="rounded"
               color="warning"
             />
             <Notification
               className={classes.notificationItem}
-              type="upload"
-              message="Your file is ready to upload"
+              type="delivered"
+              message="سفارش تحویل داده شد - delivered"
               variant="rounded"
               color="primary"
             />
             <Notification
               className={classes.notificationItem}
-              type="disc"
-              message="The disc is full"
+              type="defence"
+              message="اعلان پیشگیری - defence"
               variant="rounded"
               color="info"
             />
