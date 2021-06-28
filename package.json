@@ -3,6 +3,7 @@
   "version": "1.1.0",
   "private": true,
   "author": "Abolfazl Panahiazar",
+  "homepage": "http://abolfazlpanahiazar.github.io/Persian-Material-UI-admin-panel",
   "resolutions": {
     "websocket-extensions": "^0.1.4"
   },
@@ -26,6 +27,8 @@
     "tinycolor2": "^1.4.1"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -47,6 +50,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^3.2.3",
     "prettier": "^1.19.1"
   }
 }
