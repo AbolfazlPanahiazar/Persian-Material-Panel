@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/Persian-Material-UI-admin-panel/static/js/main.27a05f99.chunk.js",
+    "main.js.map": "/Persian-Material-UI-admin-panel/static/js/main.27a05f99.chunk.js.map",
+    "runtime~main.js": "/Persian-Material-UI-admin-panel/static/js/runtime~main.0dbed931.js",
+    "runtime~main.js.map": "/Persian-Material-UI-admin-panel/static/js/runtime~main.0dbed931.js.map",
+    "static/css/2.dd1d7839.chunk.css": "/Persian-Material-UI-admin-panel/static/css/2.dd1d7839.chunk.css",
+    "static/js/2.9250618d.chunk.js": "/Persian-Material-UI-admin-panel/static/js/2.9250618d.chunk.js",
+    "static/js/2.9250618d.chunk.js.map": "/Persian-Material-UI-admin-panel/static/js/2.9250618d.chunk.js.map",
+    "index.html": "/Persian-Material-UI-admin-panel/index.html",
+    "precache-manifest.77b7cfddb93a8e4c8124304cff3a6a8b.js": "/Persian-Material-UI-admin-panel/precache-manifest.77b7cfddb93a8e4c8124304cff3a6a8b.js",
+    "service-worker.js": "/Persian-Material-UI-admin-panel/service-worker.js",
+    "static/css/2.dd1d7839.chunk.css.map": "/Persian-Material-UI-admin-panel/static/css/2.dd1d7839.chunk.css.map",
+    "static/media/font-awesome.min.css": "/Persian-Material-UI-admin-panel/static/media/fontawesome-webfont.fee66e71.woff",
+    "static/media/google.svg": "/Persian-Material-UI-admin-panel/static/media/google.09aea0f5.svg",
+    "static/media/logo.svg": "/Persian-Material-UI-admin-panel/static/media/logo.3d432ca2.svg",
+    "static/media/logo.png": "/Persian-Material-UI-admin-panel/static/media/logo.ca0a3206.png"
+  }
+}
